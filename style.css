@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #EEEEEE;
+}
+
+main{
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0px 0px 20px 20px #00000014;
+}
+
+#intro{
+    display: flex;
+}
+
+#apresentacao{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+    align-items: center;
+}
+
+#apresentacaoimg{
+    width: 60%;
+    background-image: url('imgs/photo-background.jpg');
+    background-size: cover;
+}
+
+#button{
+    margin-top: 30px;
+    text-decoration: none;
+    color: #000000cc;
+    border: 1px solid #00000045;
+    padding: 15px 40px;
+    border-radius: 20px;
+    transition-duration: 0.6s;
+}
+
+#button:hover{
+    background-color: #ececec;
+}
+
+#art2{
+    width: 100%;
+}
+
+#ourwork{
+    height: 60px;
+    background-color: #333333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#ourwork span{
+    width: 90px;
+    text-align: center;
+    padding: 6px;
+    border-left: 1px dotted;
+    border-right: 1px dotted;
+}
+
+.photo{
+    background-color: #EEEEEE;
+}
+
+.img{
+    width: 100%;
+}
+
+.phototext{
+    text-align: center;
+    padding: 15px 0px 15px 0px;
+    background-color: #EEEEEE;
+}
+
+.phototext h3{
+    margin-top: 0px;
+}
+
+footer{
+    margin-top: 85px;
+    width: 100%;
+    text-align: center;
+}
+
+footer h3{
+    font-size: 40px;
+    color: #000000c4;
+    margin-bottom: 0px;
+}
+
+footer p{
+    color: #000000cc;
+}
+
+footer a{
+    text-decoration: none;
+    color: #000000;
+}
+
+@media screen and (max-width: 500px){
+    #intro{
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    #apresentacao{
+        height: 50%;
+    }
+
+    #apresentacaoimg {
+        height: 50%;
+        width: 100%;
+        background-position: center;
+    }
+}
